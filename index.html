@@ -57,8 +57,12 @@
             align-items: center;
             margin: 2%;
         }
+        .gallery-group .gallery-images {
+            display: flex;
+            flex-direction: row; /* Arrange images horizontally */
+            justify-content: center;
+        }
         .gallery-group .gallery-item {
-            display: inline-block;
             margin: 0 5px;
         }
         .gallery-group .gallery-item img {
@@ -114,14 +118,16 @@
             <div class="caption">I guess they are bicycle shelves.</div>
         </div>
         <div class="gallery-group">
-            <div class="gallery-item">
-                <img src="./src/static/CapitolHilljpg/IMG_7895.jpg" alt="">
-            </div>
-            <div class="gallery-item">
-                <img src="./src/static/CapitolHilljpg/IMG_7896.jpg" alt="">
-            </div>
-            <div class="gallery-item">
-                <img src="./src/static/CapitolHilljpg/IMG_7897.jpg" alt="Bus station">
+            <div class="gallery-images">
+                <div class="gallery-item">
+                    <img src="./src/static/CapitolHilljpg/IMG_7895.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="./src/static/CapitolHilljpg/IMG_7896.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="./src/static/CapitolHilljpg/IMG_7897.jpg" alt="Bus station">
+                </div>
             </div>
             <div class="caption">
                 Bus station with a dynamic bus info bulletin? Can't imagine how useful it is and 
