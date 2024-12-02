@@ -38,6 +38,15 @@
         h1 {
             text-align: center;
         }
+        .resized-image {
+            width: 600px;
+            height: auto; /* Maintain aspect ratio */
+        }
+        .caption {
+            font-size: 1.5em; /* Increase font size */
+            text-align: center;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -48,18 +57,20 @@
             <div class="caption">Caption for Image 1</div>
         </div> -->
         <div class="gallery-item">
-            <img src="src/static/CapitolHilljpg/IMG_7883.jpg" alt="Note the wheel sign on the bus.">
+            <img src="./src/static/CapitolHilljpg/IMG_7883.jpg" alt="Note the wheel sign on the bus.">
             <div class="caption">Note the wheel sign on the bus.</div>
         </div>
         <div class="gallery-item">
-            <img src="src/static/CapitolHilljpg/IMG_7885.jpg" alt="This area is covered with overhead lines (Pantograph).">
+            <img src="./src/static/CapitolHilljpg/IMG_7885.jpg" alt="This area is covered with overhead lines (Pantograph).">
             <div class="caption">This area is covered with overhead lines (Pantograph).</div>
         </div>
         <div class="gallery-item">
-            <img src="src/static/CapitolHilljpg/IMG_7886.jpg" alt="Strong gender diversity culture.">
+            <img src="./src/static/CapitolHilljpg/IMG_7886.jpg" alt="Strong gender diversity culture.">
             <div class="caption">Strong gender diversity culture.</div>
         </div>
         <!-- Add more gallery items as needed -->
     </div>
+    <img src="./src/static/CapitolHilljpg/IMG_79.jpg" alt="telegraph pole is filled with trash" class="resized-image">
+    <div class="caption">Telegraph pole is filled with trash</div>
 </body>
 </html>
