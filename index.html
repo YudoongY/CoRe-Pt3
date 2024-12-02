@@ -6,11 +6,23 @@
     <title>Main Page</title>
     <style>
         body {
+            position: relative;
             font-family: Arial, sans-serif;
-            background-image: url('./src/static/mapimage.jpg');
+            margin: 0;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('path/to/your/background-image.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            opacity: 0.5; /* Adjust the opacity (0 = transparent, 1 = opaque) */
+            z-index: -1;
         }
         .gallery {
             display: flex;
@@ -64,10 +76,6 @@
 <body>
     <h1>Welcome to the Main Page</h1>
     <div class="gallery">
-        <!-- <div class="gallery-item">
-            <img src="src/static/CapitolHilljpg/IMG_7881.jpg" alt="Caption 1">
-            <div class="caption">Caption for Image 1</div>
-        </div> -->
         <div class="gallery-item">
             <img src="./src/static/CapitolHilljpg/IMG_7883.jpg" alt="Note the wheel sign on the bus.">
             <div class="caption">Note the wheel sign on the bus.</div>
@@ -91,11 +99,11 @@
         </div>
         <div class="gallery-item">
             <img src="./src/static/CapitolHilljpg/IMG_7890.JPG" alt="">
-            <div class="caption">I'll be back next time!.</div>
+            <div class="caption">I'll be back next time!. &lt;3</div>
         </div>
         <div class="gallery-item">
             <img src="./src/static/CapitolHilljpg/IMG_7892.jpg" alt="Misterious boxes">
-            <div class="caption">Misterious boxes.</div>
+            <div class="caption">Misterious boxes. o_O</div>
         </div>
         <div class="gallery-item">
             <img src="./src/static/CapitolHilljpg/IMG_7894.jpg" alt="">
@@ -119,12 +127,29 @@
         <div class="gallery-item">
             <img src="./src/static/CapitolHilljpg/IMG_7898.jpg" alt="Boards">
             <div class="caption">What a bunch of pay-park information. Can you figure out what to do at first glance? /o\
-                                I can't. But the parking spot reserved for disabilities is caring, I have to admit.</div>
+                                I can't.:&#40; But the parking spot reserved for disabilities is caring, I have to admit.</div>
         </div>
         <div class="gallery-item">
             <img src="./src/static/CapitolHilljpg/IMG_7899.jpg" alt="Solar Panel">
             <div class="caption">A Solar panel! \o/
                             It's a great idea to maintain these small but necessary urban facility with solar energy.</div>
+        </div>
+        <div class="gallery-item">
+            <img src="./src/static/CapitolHilljpg/IMG_7900.jpg" alt="Code board">
+            <div class="caption">Misterious code board. It must be for that door.</div>
+        </div>
+        <div class="gallery-item">
+            <img src="./src/static/CapitolHilljpg/IMG_7905.jpg" alt="">
+            <div class="caption">Measuring device. For water supply/usage? o_O?</div>
+        </div>
+        <div class="gallery-item">
+            <img src="./src/static/CapitolHilljpg/IMG_7907.jpg" alt="">
+            <div class="caption">ATM usage is common.</div>
+        </div>
+        <div class="gallery-item">
+            <img src="./src/static/CapitolHilljpg/IMG_7909.jpg" alt="">
+            <div class="caption">There are many dance tracks in front of stores in the neighborhood.
+                                Unique and impressive culture. &lt;3</div>
         </div>
     </div>
 </body>
