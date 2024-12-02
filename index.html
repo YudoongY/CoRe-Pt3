@@ -5,20 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
     <style>
-        .resized-image {
-            width: 600px;
-            height: auto; /* Maintain aspect ratio */
+        body {
+            background-color: #f0f0f0; /* Light gray background */
+            font-family: Arial, sans-serif;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery-item {
+            width: 45%;
+            margin: 2%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .gallery-item:nth-child(odd) {
+            align-items: flex-start;
+        }
+        .gallery-item:nth-child(even) {
+            align-items: flex-end;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
         }
         .caption {
-            font-size: 1.5em; /* Increase font size */
+            font-size: 1.2em;
+            margin-top: 5px;
+            text-align: left;
+        }
+        .gallery-item:nth-child(even) .caption {
+            text-align: right;
+        }
+        h1 {
             text-align: center;
-            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <h1>Welcome to the Main Page</h1>
-    <img src="./src/static/CapitolHilljpg/IMG_79_1.jpg" alt="telegraph pole is filled with trash" class="resized-image">
-    <div class="caption">Telegraph pole is filled with trash</div>
+    <div class="gallery">
+        <!-- <div class="gallery-item">
+            <img src="src/static/CapitolHilljpg/IMG_7881.jpg" alt="Caption 1">
+            <div class="caption">Caption for Image 1</div>
+        </div> -->
+        <div class="gallery-item">
+            <img src="src/static/CapitolHilljpg/IMG_7883.jpg" alt="Note the wheel sign on the bus.">
+            <div class="caption">Caption for Image 2</div>
+        </div>
+        <div class="gallery-item">
+            <img src="src/static/CapitolHilljpg/IMG_7885.jpg" alt="This area is covered with overhead line (Pantograph)">
+            <div class="caption">Caption for Image 3</div>
+        </div>
+        <div class="gallery-item">
+            <img src="src/static/CapitolHilljpg/IMG_7886.jpg" alt="Strong gender diversity culture">
+            <div class="caption">Caption for Image 4</div>
+        </div>
+        <!-- Add more gallery items as needed -->
+    </div>
 </body>
 </html>
