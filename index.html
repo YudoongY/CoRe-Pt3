@@ -6,8 +6,10 @@
     <title>Main Page</title>
     <style>
         body {
-            background-color: #f0f0f0; /* Light gray background */
+            background-color: #f0f0f0;
             font-family: Arial, sans-serif;
+            /* Beautify background */
+            background: linear-gradient(to bottom right, #f0f0f0, #d0d0d0);
         }
         .gallery {
             display: flex;
@@ -15,17 +17,10 @@
             justify-content: center;
         }
         .gallery-item {
-            width: 45%;
+            width: 10%;
             margin: 2%;
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-        }
-        .gallery-item:nth-child(odd) {
-            align-items: flex-start;
-        }
-        .gallery-item:nth-child(even) {
-            align-items: flex-end;
         }
         .gallery-item img {
             width: 100%;
@@ -33,7 +28,7 @@
             border-radius: 8px;
         }
         .caption {
-            font-size: 1.2em;
+            font-size: 1.5em; /* Enlarge caption font */
             margin-top: 5px;
             text-align: left;
         }
@@ -54,15 +49,15 @@
         </div> -->
         <div class="gallery-item">
             <img src="src/static/CapitolHilljpg/IMG_7883.jpg" alt="Note the wheel sign on the bus.">
-            <div class="caption">Caption for Image 2</div>
+            <div class="caption">Note the wheel sign on the bus.</div>
         </div>
         <div class="gallery-item">
-            <img src="src/static/CapitolHilljpg/IMG_7885.jpg" alt="This area is covered with overhead line (Pantograph)">
-            <div class="caption">Caption for Image 3</div>
+            <img src="src/static/CapitolHilljpg/IMG_7885.jpg" alt="This area is covered with overhead lines (Pantograph).">
+            <div class="caption">This area is covered with overhead lines (Pantograph).</div>
         </div>
         <div class="gallery-item">
-            <img src="src/static/CapitolHilljpg/IMG_7886.jpg" alt="Strong gender diversity culture">
-            <div class="caption">Caption for Image 4</div>
+            <img src="src/static/CapitolHilljpg/IMG_7886.jpg" alt="Strong gender diversity culture.">
+            <div class="caption">Strong gender diversity culture.</div>
         </div>
         <!-- Add more gallery items as needed -->
     </div>
