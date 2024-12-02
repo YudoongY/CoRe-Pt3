@@ -39,6 +39,26 @@
         h1 {
             text-align: center;
         }
+        .gallery-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2%;
+        }
+        .gallery-group .gallery-item {
+            display: inline-block;
+            margin: 0 5px;
+        }
+        .gallery-group .gallery-item img {
+            width: 200px; /* Adjust the width as needed */
+            height: auto;
+            border-radius: 8px;
+        }
+        .gallery-group .caption {
+            font-size: 1.2em;
+            margin-top: 10px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -81,18 +101,20 @@
             <img src="./src/static/CapitolHilljpg/IMG_7894.jpg" alt="">
             <div class="caption">I guess they are bicycle shelves.</div>
         </div>
-        <div class="gallery-item">
-            <img src="./src/static/CapitolHilljpg/IMG_7895.jpg" alt="">
-            <div class="caption">.</div>
-        </div>
-        <div class="gallery-item">
-            <img src="./src/static/CapitolHilljpg/IMG_7896.jpg" alt="">
-            <div class="caption">.</div>
-        </div>
-        <div class="gallery-item">
-            <img src="./src/static/CapitolHilljpg/IMG_7897.jpg" alt="Bus station">
-            <div class="caption">Bus station with a dynamic bus info bulletin? Can't imagine how useful it is and 
-                                how convenient our commuting would be if it's applied all around Seattle.</div>
+        <div class="gallery-group">
+            <div class="gallery-item">
+                <img src="./src/static/CapitolHilljpg/IMG_7895.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+                <img src="./src/static/CapitolHilljpg/IMG_7896.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+                <img src="./src/static/CapitolHilljpg/IMG_7897.jpg" alt="Bus station">
+            </div>
+            <div class="caption">
+                Bus station with a dynamic bus info bulletin? Can't imagine how useful it is and 
+                how convenient our commuting would be if it's applied all around Seattle.
+            </div>
         </div>
         <div class="gallery-item">
             <img src="./src/static/CapitolHilljpg/IMG_7898.jpg" alt="Boards">
